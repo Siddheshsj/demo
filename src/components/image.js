@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 const Image = ({id}) => {
     const [photo, setPhoto] = React.useState(null);
     useEffect(() => {
-        fetch(`http://jsonplaceholder.typicode.com/photos/${id}`)
+        fetch(`https://jsonplaceholder.typicode.com/photos/${id}`)
         .then(res => res.json())
         .then((data) => {
             setPhoto(data);
